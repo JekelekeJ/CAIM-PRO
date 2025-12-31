@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Prompt Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#007bff">
+</head>
+<body>
+    <header>
+        <h1>Snack Prompt Builder</h1>
+        <p>Quickly customize options to generate an AI prompt!</p>
+    </header>
+    <main>
+        <form id="prompt-form">
+            <label for="genre">Genre:</label>
+            <select id="genre" required>
+                <option value="">Select...</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="realistic">Realistic</option>
+                <option value="abstract">Abstract</option>
+            </select>
+
+            <label for="style">Style:</label>
+            <select id="style" required>
+                <option value="">Select...</option>
+                <option value="watercolor">Watercolor</option>
+                <option value="digital art">Digital Art</option>
+                <option value="photorealistic">Photorealistic</option>
+                <option value="cartoon">Cartoon</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="e.g., a dragon, a city" required>
+
+            <label for="tone">Tone/Mood:</label>
+            <select id="tone" required>
+                <option value="">Select...</option>
+                <option value="mysterious">Mysterious</option>
+                <option value="cheerful">Cheerful</option>
+                <option value="dark">Dark</option>
+                <option value="vibrant">Vibrant</option>
+            </select>
+
+            <button type="submit">Generate Prompt</button>
+        </form>
+        <div id="output" style="display: none;">
+            <h2>Your AI Prompt:</h2>
+            <p id="generated-prompt"></p>
+            <button id="copy-btn">Copy to Clipboard</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
