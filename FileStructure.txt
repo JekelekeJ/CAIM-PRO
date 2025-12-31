@@ -1,0 +1,9 @@
+your-repo/
+├── index.html          # Main HTML file
+├── styles.css          # CSS for styling
+├── script.js           # JavaScript for logic
+├── manifest.json       # PWA manifest
+├── sw.js               # Service worker for offline support
+└── icons/              # Folder for PWA icons (you'll need to add images)
+    ├── icon-192.png
+    └── icon-512.png
